@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Placeholder portrait">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1d28"/>
+      <stop offset="100%" style="stop-color:#12141a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6ee7c5"/>
+      <stop offset="100%" style="stop-color:#5ad4b0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bg)"/>
+  <circle cx="100" cy="78" r="36" fill="#2a2f3d"/>
+  <ellipse cx="100" cy="155" rx="52" ry="44" fill="#2a2f3d"/>
+  <path d="M100 118c-18 0-32 14-32 32v6h64v-6c0-18-14-32-32-32z" fill="#363b4d"/>
+  <circle cx="88" cy="74" r="4" fill="#6ee7c5" opacity="0.5"/>
+  <circle cx="112" cy="74" r="4" fill="#6ee7c5" opacity="0.5"/>
+  <path d="M92 88c8 6 20 6 28 0" stroke="url(#accent)" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

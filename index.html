@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Julian's portfolio — student developer showcasing projects, skills, and creative work." />
+  <title>Julian | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="#home">J.</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link nav-link--cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero section">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <figure class="profile reveal is-visible" data-reveal>
+          <img class="profile__img" src="images/profile.svg" width="200" height="200" alt="Portrait of Julian" />
+          <figcaption class="visually-hidden">Profile photo</figcaption>
+        </figure>
+        <div class="hero__text">
+          <p class="hero__eyebrow reveal is-visible" data-reveal data-delay="1">Student &amp; Developer</p>
+          <h1 class="hero__title reveal is-visible" data-reveal data-delay="2">
+            <span class="hero__name">Julian</span>
+            <span class="hero__role">Aspiring developer building cool things for the web</span>
+          </h1>
+          <div class="hero__actions reveal is-visible" data-reveal data-delay="3">
+            <a class="btn btn--primary" href="#projects">See my projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About">
+        <span class="scroll-hint__line"></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about section section--alt">
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <p class="section-eyebrow">About me</p>
+          <h2 class="section-title">A little bit about who I am</h2>
+        </header>
+        <div class="about__grid">
+          <div class="about__copy reveal" data-reveal>
+            <p>
+              Hey! I'm Julian — a student with a passion for web development and creative problem-solving.
+              I love building websites and apps that look great and work even better.
+            </p>
+            <p>
+              I'm always learning new technologies, taking on side projects, and looking for opportunities
+              to grow as a developer. When I'm not coding, you'll find me exploring new ideas and collaborating with peers.
+            </p>
+          </div>
+          <ul class="about__facts reveal" data-reveal data-delay="1">
+            <li><span class="fact-label">Education</span> <span class="fact-value">Computer Science Student</span></li>
+            <li><span class="fact-label">Focus</span> <span class="fact-value">Web Development</span></li>
+            <li><span class="fact-label">Interests</span> <span class="fact-value">UI Design, Open Source</span></li>
+            <li><span class="fact-label">Status</span> <span class="fact-value">Open to internships</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <p class="section-eyebrow">My skills</p>
+          <h2 class="section-title">Technologies &amp; tools I work with</h2>
+        </header>
+        <div class="skills__grid">
+          <div class="skill-group reveal" data-reveal>
+            <h3 class="skill-group__title">Languages</h3>
+            <ul class="skill-tags">
+              <li class="skill-tag">HTML</li>
+              <li class="skill-tag">CSS</li>
+              <li class="skill-tag">JavaScript</li>
+              <li class="skill-tag">Python</li>
+              <li class="skill-tag">SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal" data-reveal data-delay="1">
+            <h3 class="skill-group__title">Frameworks &amp; Libraries</h3>
+            <ul class="skill-tags">
+              <li class="skill-tag">React</li>
+              <li class="skill-tag">Node.js</li>
+              <li class="skill-tag">Express</li>
+              <li class="skill-tag">Bootstrap</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal" data-reveal data-delay="2">
+            <h3 class="skill-group__title">Tools &amp; Platforms</h3>
+            <ul class="skill-tags">
+              <li class="skill-tag">Git &amp; GitHub</li>
+              <li class="skill-tag">VS Code</li>
+              <li class="skill-tag">Figma</li>
+              <li class="skill-tag">npm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects section section--alt">
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <p class="section-eyebrow">My work</p>
+          <h2 class="section-title">Featured projects</h2>
+          <p class="section-lead">A selection of things I've built, from class assignments to personal side projects.</p>
+        </header>
+        <ul class="projects__grid">
+          <li class="project-card reveal" data-reveal>
+            <div class="project-card__preview">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <span>&#128187;</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Task Tracker App</h3>
+              <p class="project-card__text">A full-stack to-do application with user authentication, drag-and-drop sorting, and real-time updates.</p>
+              <ul class="project-card__tags">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <div class="project-card__links">
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="project-card reveal" data-reveal data-delay="1">
+            <div class="project-card__preview">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <span>&#127763;</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Weather Dashboard</h3>
+              <p class="project-card__text">A responsive weather app that fetches live data from an API, with location search and 5-day forecasts.</p>
+              <ul class="project-card__tags">
+                <li>JavaScript</li>
+                <li>REST API</li>
+                <li>CSS</li>
+              </ul>
+              <div class="project-card__links">
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="project-card reveal" data-reveal data-delay="2">
+            <div class="project-card__preview">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <span>&#128221;</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Student Blog Platform</h3>
+              <p class="project-card__text">A blogging platform where students can write, share, and comment on posts. Built as a class project.</p>
+              <ul class="project-card__tags">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLite</li>
+              </ul>
+              <div class="project-card__links">
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+      <div class="container contact__inner reveal" data-reveal>
+        <h2 class="contact__title">Let's connect</h2>
+        <p class="contact__text">I'm always open to new opportunities, collaborations, or just a friendly chat about tech.</p>
+        <div class="contact__links">
+          <a class="contact-link" href="mailto:julian@example.com">julian@example.com</a>
+          <a class="contact-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="contact-link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">&copy; <span id="year"></span> Julian. Built with passion and late-night coffee.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio — web developer and designer." />
+  <title>Alex Morgan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="#home">AM</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#contact" class="nav-link nav-link--cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <figure class="profile reveal is-visible" data-reveal>
+          <img class="profile__img" src="images/profile.svg" width="200" height="200" alt="Portrait of Alex Morgan" />
+          <figcaption class="visually-hidden">Profile photo</figcaption>
+        </figure>
+        <div class="hero__text">
+          <p class="hero__eyebrow reveal is-visible" data-reveal data-delay="1">Available for hire</p>
+          <h1 class="hero__title reveal is-visible" data-reveal data-delay="2">
+            <span class="hero__name">Alex Morgan</span>
+            <span class="hero__role">Web developer &amp; UI specialist</span>
+          </h1>
+          <p class="hero__meta reveal is-visible" data-reveal data-delay="3">
+            <span class="meta-item"><abbr title="Gender">Gender</abbr>: <strong>Non-binary</strong></span>
+            <span class="meta-dot" aria-hidden="true"></span>
+            <span class="meta-item"><strong>28</strong> years old</span>
+          </p>
+          <div class="hero__actions reveal is-visible" data-reveal data-delay="4">
+            <a class="btn btn--primary" href="#work">View my work</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About">
+        <span class="scroll-hint__line"></span>
+      </a>
+    </section>
+
+    <section id="about" class="about section section--alt">
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <p class="section-eyebrow">About me</p>
+          <h2 class="section-title">Building fast, accessible web experiences</h2>
+        </header>
+        <div class="about__grid">
+          <div class="about__copy reveal" data-reveal>
+            <p>
+              I am a front-end engineer focused on clean interfaces, performance, and maintainable code.
+              I enjoy turning complex requirements into simple, polished products that hiring managers and users can navigate with ease.
+            </p>
+            <p>
+              When I am not coding, I contribute to open source, sketch UI ideas, and keep up with modern web standards so every project ships with quality in mind.
+            </p>
+          </div>
+          <ul class="about__facts reveal" data-reveal data-delay="1">
+            <li><span class="fact-label">Location</span> <span class="fact-value">Remote / EU</span></li>
+            <li><span class="fact-label">Focus</span> <span class="fact-value">React, TypeScript, CSS</span></li>
+            <li><span class="fact-label">Languages</span> <span class="fact-value">English, Spanish</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work section">
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <p class="section-eyebrow">What I deliver</p>
+          <h2 class="section-title">Professional work you can rely on</h2>
+          <p class="section-lead">
+            Use this site as a living resume: replace the copy below with your real projects, stack, and links before you apply.
+          </p>
+        </header>
+        <ul class="work__cards">
+          <li class="work-card reveal" data-reveal>
+            <div class="work-card__icon" aria-hidden="true">01</div>
+            <h3 class="work-card__title">Responsive websites</h3>
+            <p class="work-card__text">Marketing sites, landing pages, and portfolios with smooth motion and mobile-first layouts.</p>
+          </li>
+          <li class="work-card reveal" data-reveal data-delay="1">
+            <div class="work-card__icon" aria-hidden="true">02</div>
+            <h3 class="work-card__title">Web applications</h3>
+            <p class="work-card__text">Dashboards, forms, and internal tools with clear UX and solid accessibility practices.</p>
+          </li>
+          <li class="work-card reveal" data-reveal data-delay="2">
+            <div class="work-card__icon" aria-hidden="true">03</div>
+            <h3 class="work-card__title">Design systems</h3>
+            <p class="work-card__text">Reusable components, tokens, and documentation so teams ship consistently at scale.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section section--alt">
+      <div class="container contact__inner reveal" data-reveal>
+        <h2 class="contact__title">Let’s work together</h2>
+        <p class="contact__text">Swap this block with your email, LinkedIn, and GitHub. A simple mailto works well for applications.</p>
+        <div class="contact__links">
+          <a class="contact-link" href="mailto:hello@example.com">hello@example.com</a>
+          <a class="contact-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="contact-link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">© <span id="year"></span> Alex Morgan. Built for job applications — edit content in <code>index.html</code>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
